@@ -1,6 +1,8 @@
 # DeadLitems
 A UI for easy view of Deadlock items.
 
+**Live site: [deadlockitems.netlify.app](https://deadlockitems.netlify.app/)**
+
 A recreation of Deadlock's in-game item shop: items are split into **Weapon / Vitality / Spirit** tabs and grouped by tier with their soul cost. Click any item to see its full in-game tooltip plus the exact numbers behind it.
 
 ## Features
@@ -16,7 +18,9 @@ A recreation of Deadlock's in-game item shop: items are split into **Weapon / Vi
 - Keyboard: `1` `2` `3` switch tabs, `/` search, `←` `→` step through items, `Esc` close
 
 ## Running
-No build step. Either open `index.html` directly, or serve the folder:
+The easiest way is the live site: **https://deadlockitems.netlify.app/**
+
+To run it locally there's no build step. Either open `index.html` directly, or serve the folder:
 
 ```sh
 python3 -m http.server 8000
