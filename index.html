@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DeadLitems</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark">DL</span>
+      <span class="brand-name">DeadLitems</span>
+    </div>
+    <label class="search">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10.5 3a7.5 7.5 0 0 1 5.9 12.1l4.8 4.8-1.4 1.4-4.8-4.8A7.5 7.5 0 1 1 10.5 3Zm0 2a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11Z"/></svg>
+      <input id="search" type="search" placeholder="Search items, stats, effects…" autocomplete="off" />
+    </label>
+  </header>
+
+  <main class="shop" id="shop">
+    <nav class="tabs" id="tabs" aria-label="Item categories"></nav>
+    <section class="panel" id="panel" aria-live="polite">
+      <div class="status" id="status">Loading items…</div>
+    </section>
+  </main>
+
+  <!-- Item detail overlay -->
+  <div class="overlay" id="overlay" hidden>
+    <div class="detail" id="detail" role="dialog" aria-modal="true" aria-labelledby="detail-name"></div>
+  </div>
+
+  <footer class="footer">
+    Item data &amp; art from the community <a href="https://deadlock-api.com" target="_blank" rel="noopener">Deadlock API</a>.
+    Not affiliated with Valve.
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
